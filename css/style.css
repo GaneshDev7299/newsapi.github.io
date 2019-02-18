@@ -182,7 +182,7 @@ a.goto-button {
 } 
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 1024) {
+@media only screen and (min-width: 1080) {
     .search-input {
         height: 34px;
         width: 93%;
@@ -214,5 +214,31 @@ a.goto-button {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+    .search-input {
+        height: 34px;
+        width: 93%;
+        padding: 0 10px;
+    }
+    
+    button {
+        height: 36px;
+        width: 4%;
+    }
 
+    .news-item {
+        width: 100%;
+        display: block;
+    }
+
+    .news-inner-container {
+        padding: 0;
+    }
+
+    .news-image-container {
+        width: 20%;
+    }
+    
+    .news-content-container {
+        width: 75%;
+    }
 }
