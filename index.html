@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Pattem Digital - Interview Task">
+        <meta name="author" content="Ganesh Dev">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="refresh" content="30">
+        <title>Latest News</title>
+        <!-- icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="pre-loader"></div>
+        <div class="container">
+            <h3 class="header-text">Latest News Search</h3>
+            <div class="news-container">
+                <p class="refresh-text">
+                    Auto refresh in <span class="timer">30</span> seconds
+                </p>
+                <div class="input-group">
+                    <form id="searchForm">
+                        <input type="text" class="search-input" name="query">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+                <div class="news-wrapper"></div>
+                <img src="images/loader.gif" alt="loader" class="item-loader">
+            </div>
+        </div>
+        <!-- scripts -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>

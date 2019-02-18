@@ -1,0 +1,218 @@
+/* Own CSS */
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fff;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.pre-loader {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background: #fff url(../images/loader-icon-spacer.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    display: none;
+}
+
+.container {
+    background-color: #D3FDB3;
+    max-width: 920px;
+    padding: 20px 40px;
+    margin: 0 auto;
+}
+
+.header-text{
+    text-align: center;
+}
+
+.refresh-text {
+    font-size: 0.8em;
+    text-align: right;
+}
+
+.search-input {
+    height: 34px;
+    width: 93%;
+    margin: 0;
+    float: left;
+    border: none;
+    border: 1px solid #a7d286;
+    outline: none;
+    font-size: 1em;
+    padding: 0 10px;
+}
+
+button {
+    height: 36px;
+    width: 4%;
+    margin: 0;
+    padding: 0;
+    background-color: #a7d286;
+    border: none;
+    color: #fff;
+    float: left;
+}
+
+.news-container {
+    background-color: #fff;
+    padding: 20px;
+}
+
+.news-wrapper {
+    min-height: 400px;
+}
+
+.news-item {
+    clear: both;
+    padding: 20px 0;
+    word-break: break-word;
+}
+
+.news-inner-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.news-image-container {
+    width: 20%;
+    padding: 10px;
+    text-align: left;
+}
+
+.news-image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.news-content-container {
+    width: 75%;
+}
+
+.news-title {
+    margin-top: 5px;
+}
+
+.news-source-date {
+    font-size: 0.9em;
+    color: #555555;
+}
+
+.title-description {
+    font-size: 0.9em;
+    color: #555555;
+}
+
+a.goto-button {
+    font-size: 0.8em;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 5px 20px;
+    background-color: #a7d286;
+    color: #fff;
+}
+
+.item-loader{
+    margin: 0 auto;
+    display: block;
+}
+
+.error{
+    text-align: center;
+    color: #f00;
+    display: block;
+    position: relative;
+    top: 20px;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+    .search-input {
+        height: 34px;
+        width: 80%;
+        padding: 3px;
+    }
+
+    button {
+        height: 42px;
+        width: 16%;
+    }
+
+    .news-image-container, .news-content-container {
+        width: 100%;
+    }
+}
+/* Medium devices (landscape tablets, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .search-input {
+        width: 90%;
+        padding: 0 3px;
+    }
+
+    .news-item {
+        width: 48%;
+        display: inline-block;
+    }
+
+    .news-inner-container {
+        padding: 0 10px;
+    }
+
+    .news-image-container, .news-content-container {
+        width: 100%;
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 1024) {
+    .search-input {
+        height: 34px;
+        width: 93%;
+        padding: 0 10px;
+    }
+    
+    button {
+        height: 36px;
+        width: 4%;
+    }
+
+    .news-item {
+        width: 100%;
+        display: block;
+    }
+
+    .news-inner-container {
+        padding: 0;
+    }
+
+    .news-image-container {
+        width: 20%;
+    }
+    
+    .news-content-container {
+        width: 75%;
+    }
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
