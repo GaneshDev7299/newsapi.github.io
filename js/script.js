@@ -8,7 +8,7 @@ var imgUrl = null;
 var artDate = null; 
 var $article = null;
 var scroll = 1;
-var query = "reactjs";
+var query = "all";
 var pageSize = 10;
 
 $(document).ready(function(){
@@ -47,13 +47,14 @@ $(document).ready(function(){
     }
     else{
         // Get common Data From API
+        query = "all";
         $.ajax({
             url:"https://newsapi.org/v2/everything?q="+query+"&apiKey=363d26dd3d664d199ca63adc371e22aa&pageSize="+pageSize+"&page=1",
             method: "GET",
             error: function() {
                 console.log("error in connection");
             },
-            success: function(data) {
+            success: function(data) {   
                 if(data.articles.length == 0){
                     $(".item-loader").hide();
                 }else{
